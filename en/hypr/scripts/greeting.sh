@@ -5,8 +5,8 @@ early_morning_greetings=(
     "dawn? seriously?"
     "caffeine level: critical"
     "no sleep, just bugs"
-    "o tej porze tylko ptaki i devowie"
-    "morning.exe uruchamianie..."
+    "at this hour only birds and devs"
+    "morning.exe starting..."
     "world's still asleep, you're grinding"
     "5am, respect the cringe"
     "who codes this early?"
@@ -15,9 +15,9 @@ early_morning_greetings=(
 
 weekend_early_morning_greetings=(
     "weekend and you're already up? 💀"
-    "o tej porze? w weekend? skill issue"
+    "this early? on the weekend? skill issue"
     "sun rose, you too, why?"
-    "to nie jest normalne zachowanie"
+    "this is not normal behavior"
     "hey night shift, time to sleep"
     "weekend and you're grinding at dawn 💀"
 )
@@ -38,39 +38,39 @@ morning_greetings=(
     "good morning world undefined"
     "no cap, survivable"
     "grinding since morning? slay"
-    "poranny szpont, klasyk"
+    "morning grind, classic"
 )
 
 weekend_morning_greetings=(
     "weekend, you can live 😴"
     "zero standups, full vibe"
-    "jeszcze 5 minut... klasyk"
+    "5 more minutes... classic"
     "side project won't write itself"
-    "lazy sunday ale z kompilatorem"
-    "wolne = szponcisz co chcesz"
+    "lazy Sunday but with a compiler"
+    "days off = grind what you want"
     "socialife.exe not found"
     "sleeping or pretending?"
-    "weekendowy szpont, respekt"
+    "weekend grind, respect"
 )
 
 midday_greetings=(
     "had lunch? no? skill issue"
     "noon, time for a crisis"
-    "git blame, ale na siebie"
-    "build: failed (jak zwykle)"
-    "to nie bug, to feature"
+    "git blame, but on yourself"
+    "build: failed (as usual)"
+    "not a bug, a feature"
     "refactor or new feature? both bad"
     "half the day, half the sanity"
     "eat something for the love of god"
     "12:00 — time for another coffee"
     "productivity: 404"
-    "szponcisz od rana i dalej nic? mood"
+    "grinding since morning and still nothing? mood"
     "midday grind crisis"
 )
 
 weekend_midday_greetings=(
     "noon in pajamas, classic"
-    "brunch czy od razu obiad?"
+    "brunch or straight to lunch?"
     "half the weekend gone 😔"
     "eat something, human"
     "git pull origin weekend"
@@ -78,65 +78,65 @@ weekend_midday_greetings=(
 )
 
 afternoon_greetings=(
-    "deadline? jaki deadline?"
+    "deadline? what deadline?"
     "almost quitting time"
-    "SO tab numer 47 i counting"
-    "merge conflict? kondolencje"
+    "SO tab number 47 and counting"
+    "merge conflict? condolences"
     "afternoon crisis, normal"
     "nothing works and nobody knows why"
     "vim open, no exits"
     "it won't deploy itself"
-    "stack trace 200 linii, normalka"
-    "nadal szponcisz? gigachad"
+    "200-line stack trace, normal"
+    "still grinding? gigachad"
     "afternoon grind, that's a disease"
-    "szpont nie czeka na fajrant"
+    "grind doesn't wait for quitting time"
 )
 
 weekend_afternoon_greetings=(
     "weekend in progress 😎"
     "touched grass today?"
-    "skill issue czy skill issue?"
+    "skill issue or skill issue?"
     "refactoring on Saturday? slay"
     "go outside... or don't"
     "weekend = weekday without meetings"
-    "szponcisz w weekend? no cap"
+    "grinding on the weekend? no cap"
 )
 
 early_evening_greetings=(
-    "fajrant dla normalnych ludzi"
+    "quitting time for normal people"
     "day survived, commit pushed"
     "did you push? you may live"
-    "touchgrass.exe — ostatnia szansa"
+    "touchgrass.exe — last chance"
     "system works? don't touch it"
     "going out today? no? respect"
-    "kolacja > kolejny szpont, serio"
+    "dinner > another grind, seriously"
     "evening grind starting?"
 )
 
 evening_greetings=(
-    "wieczorny lo-fi i zimna kawa, meta"
-    "netflix czy kolejny PR?"
-    "wieczorny debug session klasyk"
+    "evening lo-fi and cold coffee, meta"
+    "netflix or another PR?"
+    "evening debug session, classic"
     "today was git? 🌆"
     "one more feature and I'm sleeping, lies"
-    "czas na chill"
+    "time to chill"
     "dark mode on, night mode too"
-    "wieczorny szpont to najlepszy szpont"
+    "evening grind is the best grind"
     "grinding by candlelight? romantic"
 )
 
 late_evening_greetings=(
     "still alive?"
-    "jeszcze jeden odcinek 🤡"
+    "one more episode 🤡"
     "hour of bad decisions"
     "tomorrow-you will handle it"
     "last commit of the day? lies"
     "nobody normal at this hour... so git"
     "main branch at midnight, bold"
-    "ten bug poczeka do rana"
+    "that bug can wait till morning"
     "SO is awake too, you're together"
-    "nocny szpont, klasyczna forma"
-    "szponcisz o tej porze? 💀"
+    "night grind, classic form"
+    "you're grinding at this hour? 💀"
 )
 
 night_greetings=(
@@ -144,14 +144,14 @@ night_greetings=(
     "sudo shutdown -h now"
     "sleep(8 * 3600)"
     "null pointer in head, goodnight"
-    "zamknij laptopa. nie pytam."
+    "close your laptop. I'm not asking."
     "tomorrow you'll be a corpse 💀"
     "garbage collector waiting for your brain"
     "only bugs are born at this hour"
     "git commit -m 'goodnight'"
-    "4 rano? sigma ale go to sleep"
+    "4 AM? sure, but go to sleep"
     "system needs reboot"
-    "zostaw ten szpont na jutro"
+    "leave that grind for tomorrow"
     "brain.exe stopped responding"
 )
 
@@ -211,13 +211,13 @@ get_alerts() {
 
     local mem_used
     mem_used=$(free | awk '/Mem:/ {print int($3/$2 * 100)}')
-    (( mem_used >= 90 )) && alerts+=("RAM na oparach (${mem_used}%) 💀")
+    (( mem_used >= 90 )) && alerts+=("RAM on fumes (${mem_used}%) 💀")
     (( mem_used >= 75 && mem_used < 90 )) && alerts+=("RAM is struggling (${mem_used}%)")
 
     if [[ -f /sys/class/power_supply/BAT0/capacity ]]; then
         local battery
         battery=$(cat /sys/class/power_supply/BAT0/capacity)
-        (( battery <= 15 )) && alerts+=("zaraz zdechniesz 🔋 ${battery}%")
+        (( battery <= 15 )) && alerts+=("battery critical 🔋 ${battery}%")
         (( battery > 15 && battery <= 30 )) && alerts+=("low battery (${battery}%)")
     fi
 
