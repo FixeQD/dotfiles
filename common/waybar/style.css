@@ -65,7 +65,7 @@ tooltip label {
 
 .modules-center {
     background: alpha(@base, 0.85);
-    border: 1px solid alpha(@blue, 0.3);
+    border: 1px solid alpha(@blue, 0.30);
     border-radius: 12px;
     padding: 0 6px;
     margin: 0 2px;
@@ -74,11 +74,11 @@ tooltip label {
 
 .modules-right {
     background: alpha(@base, 0.85);
-    border: 1px solid alpha(@sapphire, 0.2);
+    border: 1px solid alpha(@sapphire, 0.20);
     border-radius: 12px;
     padding: 0 6px;
     margin: 0 2px;
-    box-shadow: 0 0 12px alpha(@sapphire, 0.1);
+    box-shadow: 0 0 12px alpha(@sapphire, 0.10);
 }
 
 .modules-left > widget > *,
@@ -95,15 +95,15 @@ tooltip label {
     border-radius: 9px;
     margin: 4px 3px 4px 2px;
     border: 1px solid alpha(@mauve, 0.45);
-    box-shadow: 0 0 10px alpha(@mauve, 0.3);
+    box-shadow: 0 0 10px alpha(@mauve, 0.30);
     transition: all 200ms ease;
 }
 
 #custom-os:hover {
-    background: alpha(@mauve, 0.3);
+    background: alpha(@mauve, 0.30);
     color: @pink;
-    border-color: alpha(@pink, 0.6);
-    box-shadow: 0 0 18px alpha(@pink, 0.4);
+    border-color: alpha(@pink, 0.60);
+    box-shadow: 0 0 18px alpha(@pink, 0.40);
 }
 
 #workspaces {
@@ -124,8 +124,8 @@ tooltip label {
 
 #workspaces button:hover {
     color: @lavender;
-    background: alpha(@lavender, 0.1);
-    border-color: alpha(@lavender, 0.4);
+    background: alpha(@lavender, 0.10);
+    border-color: alpha(@lavender, 0.40);
 }
 
 #workspaces button.empty {
@@ -136,16 +136,16 @@ tooltip label {
 
 #workspaces button.populated {
     color: @subtext0;
-    background: alpha(@blue, 0.1);
-    border-color: alpha(@blue, 0.3);
+    background: alpha(@blue, 0.10);
+    border-color: alpha(@blue, 0.30);
     font-weight: 600;
     padding: 2px 8px;
 }
 
 #workspaces button.active {
     color: @crust;
-    background: linear-gradient(90deg, alpha(@mauve, 0.9), alpha(@blue, 0.8));
-    border-color: alpha(@mauve, 0.8);
+    background: linear-gradient(90deg, alpha(@mauve, 0.90), alpha(@blue, 0.80));
+    border-color: alpha(@mauve, 0.80);
     font-weight: 700;
     padding: 2px 9px;
     box-shadow: 0 0 10px alpha(@mauve, 0.55);
@@ -155,7 +155,7 @@ tooltip label {
     color: @crust;
     background: alpha(@red, 0.85);
     border-color: @red;
-    box-shadow: 0 0 10px alpha(@red, 0.6);
+    box-shadow: 0 0 10px alpha(@red, 0.60);
     font-weight: 700;
 }
 
@@ -224,7 +224,7 @@ window#waybar.empty #window {
 #custom-music {
     background: alpha(@green, 0.12);
     color: @green;
-    border-color: alpha(@green, 0.3);
+    border-color: alpha(@green, 0.30);
     padding: 1px 10px;
     font-size: 11px;
 }
@@ -233,79 +233,79 @@ window#waybar.empty #window {
     background: alpha(@green, 0.22);
     color: @teal;
     border-color: alpha(@teal, 0.55);
-    box-shadow: 0 0 10px alpha(@green, 0.3);
+    box-shadow: 0 0 10px alpha(@green, 0.30);
 }
 
 #cpu {
     background: alpha(@sapphire, 0.12);
     color: @sapphire;
-    border-color: alpha(@sapphire, 0.3);
+    border-color: alpha(@sapphire, 0.30);
 }
 
 #cpu:hover {
     background: alpha(@sapphire, 0.22);
     color: @blue;
     border-color: alpha(@blue, 0.55);
-    box-shadow: 0 0 10px alpha(@sapphire, 0.3);
+    box-shadow: 0 0 10px alpha(@sapphire, 0.30);
 }
 
-#cpu.warning {
+#cpu.warning  {
     background: alpha(@yellow, 0.15);
     color: @yellow;
-    border-color: alpha(@yellow, 0.4);
+    border-color: alpha(@yellow, 0.40);
 }
 
 #cpu.critical {
     background: alpha(@red, 0.18);
     color: @red;
-    border-color: alpha(@red, 0.5);
+    border-color: alpha(@red, 0.50);
     box-shadow: 0 0 12px alpha(@red, 0.45);
 }
 
 #memory {
     background: alpha(@mauve, 0.12);
     color: @mauve;
-    border-color: alpha(@mauve, 0.3);
+    border-color: alpha(@mauve, 0.30);
 }
 
 #memory:hover {
     background: alpha(@mauve, 0.22);
     color: @pink;
     border-color: alpha(@pink, 0.55);
-    box-shadow: 0 0 10px alpha(@mauve, 0.3);
+    box-shadow: 0 0 10px alpha(@mauve, 0.30);
 }
 
-#memory.warning {
+#memory.warning  {
     background: alpha(@yellow, 0.15);
     color: @yellow;
-    border-color: alpha(@yellow, 0.4);
+    border-color: alpha(@yellow, 0.40);
 }
 
 #memory.critical {
     background: alpha(@red, 0.18);
     color: @red;
-    border-color: alpha(@red, 0.5);
+    border-color: alpha(@red, 0.50);
     box-shadow: 0 0 12px alpha(@red, 0.45);
 }
 
 #temperature {
     background: alpha(@peach, 0.12);
     color: @peach;
-    border-color: alpha(@peach, 0.3);
+    border-color: alpha(@peach, 0.30);
 }
 
 #temperature:hover {
     background: alpha(@peach, 0.22);
     color: @maroon;
     border-color: alpha(@maroon, 0.55);
-    box-shadow: 0 0 10px alpha(@peach, 0.3);
+    box-shadow: 0 0 10px alpha(@peach, 0.30);
 }
 
 #temperature.critical {
-    background: alpha(@red, 0.2);
+    background: alpha(@red, 0.20);
     color: @red;
-    border-color: alpha(@red, 0.6);
-    box-shadow: 0 0 14px alpha(@red, 0.5);
+    border-color: alpha(@red, 0.60);
+    box-shadow: 0 0 14px alpha(@red, 0.50);
 }
 
 #network {
@@ -318,25 +318,25 @@ window#waybar.empty #window {
     background: alpha(@sky, 0.22);
     color: @teal;
     border-color: alpha(@teal, 0.55);
-    box-shadow: 0 0 10px alpha(@sky, 0.3);
+    box-shadow: 0 0 10px alpha(@sky, 0.30);
 }
 
 #network.disconnected {
-    background: alpha(@overlay0, 0.1);
+    background: alpha(@overlay0, 0.10);
     color: @overlay0;
-    border-color: alpha(@overlay0, 0.2);
+    border-color: alpha(@overlay0, 0.20);
 }
 
 #bluetooth {
-    background: alpha(@blue, 0.1);
+    background: alpha(@blue, 0.10);
     color: @overlay1;
-    border-color: alpha(@surface1, 0.3);
+    border-color: alpha(@surface1, 0.30);
 }
 
 #bluetooth.connected {
     background: alpha(@blue, 0.15);
     color: @blue;
-    border-color: alpha(@blue, 0.4);
+    border-color: alpha(@blue, 0.40);
     box-shadow: 0 0 8px alpha(@blue, 0.25);
 }
 
@@ -349,7 +349,7 @@ window#waybar.empty #window {
 #pulseaudio {
     background: alpha(@mauve, 0.12);
     color: @mauve;
-    border-color: alpha(@mauve, 0.3);
+    border-color: alpha(@mauve, 0.30);
 }
 
 #pulseaudio:hover {
@@ -368,7 +368,7 @@ window#waybar.empty #window {
 #battery {
     background: alpha(@green, 0.12);
     color: @green;
-    border-color: alpha(@green, 0.3);
+    border-color: alpha(@green, 0.30);
 }
 
 #battery:hover {
@@ -379,13 +379,13 @@ window#waybar.empty #window {
 #battery.warning {
     background: alpha(@yellow, 0.15);
     color: @yellow;
-    border-color: alpha(@yellow, 0.4);
+    border-color: alpha(@yellow, 0.40);
 }
 
 #battery.critical {
     background: alpha(@red, 0.18);
     color: @red;
-    border-color: alpha(@red, 0.5);
+    border-color: alpha(@red, 0.50);
     box-shadow: 0 0 12px alpha(@red, 0.45);
 }
 
@@ -393,31 +393,84 @@ window#waybar.empty #window {
 #battery.plugged {
     background: alpha(@sky, 0.14);
     color: @sky;
-    border-color: alpha(@sky, 0.4);
+    border-color: alpha(@sky, 0.40);
     box-shadow: 0 0 8px alpha(@sky, 0.28);
 }
 
 #battery.full {
     background: alpha(@teal, 0.14);
     color: @teal;
-    border-color: alpha(@teal, 0.4);
+    border-color: alpha(@teal, 0.40);
 }
 
-#custom-power {
+#custom-notification {
+    color: @subtext0;
+    font-size: 14px;
+    padding: 0 6px;
+    transition: color 200ms ease;
+}
+
+#custom-notification.notification {
+    color: @peach;
+}
+
+#custom-notification.dnd-notification,
+#custom-notification.dnd-none {
+    color: @overlay0;
+}
+
+#custom-notification:hover {
+    color: @lavender;
+}
+
     background: alpha(@red, 0.14);
     color: @red;
     border-color: alpha(@red, 0.35);
     font-size: 13px;
     padding: 1px 12px 1px 8px;
     margin-right: 2px;
-    box-shadow: 0 0 8px alpha(@red, 0.2);
+    box-shadow: 0 0 8px alpha(@red, 0.20);
 }
 
 #custom-power:hover {
     background: alpha(@red, 0.28);
     color: @maroon;
-    border-color: alpha(@maroon, 0.6);
+    border-color: alpha(@maroon, 0.60);
     box-shadow: 0 0 14px alpha(@red, 0.45);
+}
+
+#tray {
+    padding: 0 6px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: alpha(@red, 0.15);
+    border-radius: 4px;
+}
+
+#idle_inhibitor {
+    color: @overlay1;
+    font-size: 15px;
+    padding: 0 6px;
+    border-radius: 7px;
+    margin: 4px 2px;
+    transition: all 200ms ease;
+}
+
+#idle_inhibitor.activated {
+    color: @yellow;
+    background: alpha(@yellow, 0.12);
+    border: 1px solid alpha(@yellow, 0.35);
+    box-shadow: 0 0 8px alpha(@yellow, 0.28);
+}
+
+#idle_inhibitor:hover {
+    color: @text;
 }
 
 #custom-separator {
@@ -438,7 +491,7 @@ window#waybar.empty #window {
 #custom-wallpaper:hover {
     color: @lavender;
     background: alpha(@lavender, 0.12);
-    border: 1px solid alpha(@lavender, 0.3);
+    border: 1px solid alpha(@lavender, 0.30);
 }
 
 #custom-colorpicker {
@@ -453,5 +506,5 @@ window#waybar.empty #window {
 #custom-colorpicker:hover {
     color: @pink;
     background: alpha(@pink, 0.12);
-    border: 1px solid alpha(@pink, 0.3);
+    border: 1px solid alpha(@pink, 0.30);
 }
