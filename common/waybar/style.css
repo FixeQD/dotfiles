@@ -60,25 +60,22 @@ tooltip label {
     border-radius: 12px;
     padding: 0 6px;
     margin: 0 2px;
-    box-shadow: 0 0 12px alpha(@mauve, 0.12);
 }
 
 .modules-center {
     background: alpha(@base, 0.85);
-    border: 1px solid alpha(@blue, 0.30);
+    border: 1px solid alpha(@blue, 0.3);
     border-radius: 12px;
     padding: 0 6px;
     margin: 0 2px;
-    box-shadow: 0 0 16px alpha(@blue, 0.18);
 }
 
 .modules-right {
     background: alpha(@base, 0.85);
-    border: 1px solid alpha(@sapphire, 0.20);
+    border: 1px solid alpha(@sapphire, 0.2);
     border-radius: 12px;
     padding: 0 6px;
     margin: 0 2px;
-    box-shadow: 0 0 12px alpha(@sapphire, 0.10);
 }
 
 .modules-left > widget > *,
@@ -95,15 +92,13 @@ tooltip label {
     border-radius: 9px;
     margin: 4px 3px 4px 2px;
     border: 1px solid alpha(@mauve, 0.45);
-    box-shadow: 0 0 10px alpha(@mauve, 0.30);
     transition: all 200ms ease;
 }
 
 #custom-os:hover {
-    background: alpha(@mauve, 0.30);
+    background: alpha(@mauve, 0.3);
     color: @pink;
-    border-color: alpha(@pink, 0.60);
-    box-shadow: 0 0 18px alpha(@pink, 0.40);
+    border-color: alpha(@pink, 0.6);
 }
 
 #workspaces {
@@ -124,8 +119,8 @@ tooltip label {
 
 #workspaces button:hover {
     color: @lavender;
-    background: alpha(@lavender, 0.10);
-    border-color: alpha(@lavender, 0.40);
+    background: alpha(@lavender, 0.1);
+    border-color: alpha(@lavender, 0.4);
 }
 
 #workspaces button.empty {
@@ -136,26 +131,24 @@ tooltip label {
 
 #workspaces button.populated {
     color: @subtext0;
-    background: alpha(@blue, 0.10);
-    border-color: alpha(@blue, 0.30);
+    background: alpha(@blue, 0.1);
+    border-color: alpha(@blue, 0.3);
     font-weight: 600;
     padding: 2px 8px;
 }
 
 #workspaces button.active {
     color: @crust;
-    background: linear-gradient(90deg, alpha(@mauve, 0.90), alpha(@blue, 0.80));
-    border-color: alpha(@mauve, 0.80);
+    background: linear-gradient(90deg, alpha(@mauve, 0.9), alpha(@blue, 0.8));
+    border-color: alpha(@mauve, 0.8);
     font-weight: 700;
     padding: 2px 9px;
-    box-shadow: 0 0 10px alpha(@mauve, 0.55);
 }
 
 #workspaces button.urgent {
     color: @crust;
     background: alpha(@red, 0.85);
     border-color: @red;
-    box-shadow: 0 0 10px alpha(@red, 0.60);
     font-weight: 700;
 }
 
@@ -224,7 +217,7 @@ window#waybar.empty #window {
 #custom-music {
     background: alpha(@green, 0.12);
     color: @green;
-    border-color: alpha(@green, 0.30);
+    border-color: alpha(@green, 0.3);
     padding: 1px 10px;
     font-size: 11px;
 }
@@ -233,79 +226,72 @@ window#waybar.empty #window {
     background: alpha(@green, 0.22);
     color: @teal;
     border-color: alpha(@teal, 0.55);
-    box-shadow: 0 0 10px alpha(@green, 0.30);
 }
 
 #cpu {
     background: alpha(@sapphire, 0.12);
     color: @sapphire;
-    border-color: alpha(@sapphire, 0.30);
+    border-color: alpha(@sapphire, 0.3);
 }
 
 #cpu:hover {
     background: alpha(@sapphire, 0.22);
     color: @blue;
     border-color: alpha(@blue, 0.55);
-    box-shadow: 0 0 10px alpha(@sapphire, 0.30);
 }
 
-#cpu.warning  {
+#cpu.warning {
     background: alpha(@yellow, 0.15);
     color: @yellow;
-    border-color: alpha(@yellow, 0.40);
+    border-color: alpha(@yellow, 0.4);
 }
 
 #cpu.critical {
     background: alpha(@red, 0.18);
     color: @red;
-    border-color: alpha(@red, 0.50);
-    box-shadow: 0 0 12px alpha(@red, 0.45);
+    border-color: alpha(@red, 0.5);
 }
 
 #memory {
     background: alpha(@mauve, 0.12);
     color: @mauve;
-    border-color: alpha(@mauve, 0.30);
+    border-color: alpha(@mauve, 0.3);
 }
 
 #memory:hover {
     background: alpha(@mauve, 0.22);
     color: @pink;
     border-color: alpha(@pink, 0.55);
-    box-shadow: 0 0 10px alpha(@mauve, 0.30);
 }
 
-#memory.warning  {
+#memory.warning {
     background: alpha(@yellow, 0.15);
     color: @yellow;
-    border-color: alpha(@yellow, 0.40);
+    border-color: alpha(@yellow, 0.4);
 }
 
 #memory.critical {
     background: alpha(@red, 0.18);
     color: @red;
-    border-color: alpha(@red, 0.50);
-    box-shadow: 0 0 12px alpha(@red, 0.45);
+    border-color: alpha(@red, 0.5);
 }
 
 #temperature {
     background: alpha(@peach, 0.12);
     color: @peach;
-    border-color: alpha(@peach, 0.30);
+    border-color: alpha(@peach, 0.3);
 }
 
 #temperature:hover {
     background: alpha(@peach, 0.22);
     color: @maroon;
     border-color: alpha(@maroon, 0.55);
-    box-shadow: 0 0 10px alpha(@peach, 0.30);
 }
 
 #temperature.critical {
-    background: alpha(@red, 0.20);
+    background: alpha(@red, 0.2);
     color: @red;
-    border-color: alpha(@red, 0.60);
-    box-shadow: 0 0 14px alpha(@red, 0.50);
+    border-color: alpha(@red, 0.6);
 }
 
 #network {
@@ -318,26 +304,24 @@ window#waybar.empty #window {
     background: alpha(@sky, 0.22);
     color: @teal;
     border-color: alpha(@teal, 0.55);
-    box-shadow: 0 0 10px alpha(@sky, 0.30);
 }
 
 #network.disconnected {
-    background: alpha(@overlay0, 0.10);
+    background: alpha(@overlay0, 0.1);
     color: @overlay0;
-    border-color: alpha(@overlay0, 0.20);
+    border-color: alpha(@overlay0, 0.2);
 }
 
 #bluetooth {
-    background: alpha(@blue, 0.10);
+    background: alpha(@blue, 0.1);
     color: @overlay1;
-    border-color: alpha(@surface1, 0.30);
+    border-color: alpha(@surface1, 0.3);
 }
 
 #bluetooth.connected {
     background: alpha(@blue, 0.15);
     color: @blue;
-    border-color: alpha(@blue, 0.40);
-    box-shadow: 0 0 8px alpha(@blue, 0.25);
+    border-color: alpha(@blue, 0.4);
 }
 
 #bluetooth:hover {
@@ -349,14 +333,13 @@ window#waybar.empty #window {
 #pulseaudio {
     background: alpha(@mauve, 0.12);
     color: @mauve;
-    border-color: alpha(@mauve, 0.30);
+    border-color: alpha(@mauve, 0.3);
 }
 
 #pulseaudio:hover {
     background: alpha(@mauve, 0.22);
     color: @pink;
     border-color: alpha(@pink, 0.55);
-    box-shadow: 0 0 10px alpha(@mauve, 0.28);
 }
 
 #pulseaudio.muted {
@@ -368,39 +351,36 @@ window#waybar.empty #window {
 #battery {
     background: alpha(@green, 0.12);
     color: @green;
-    border-color: alpha(@green, 0.30);
+    border-color: alpha(@green, 0.3);
 }
 
 #battery:hover {
     background: alpha(@green, 0.22);
-    box-shadow: 0 0 10px alpha(@green, 0.28);
 }
 
 #battery.warning {
     background: alpha(@yellow, 0.15);
     color: @yellow;
-    border-color: alpha(@yellow, 0.40);
+    border-color: alpha(@yellow, 0.4);
 }
 
 #battery.critical {
     background: alpha(@red, 0.18);
     color: @red;
-    border-color: alpha(@red, 0.50);
-    box-shadow: 0 0 12px alpha(@red, 0.45);
+    border-color: alpha(@red, 0.5);
 }
 
 #battery.charging,
 #battery.plugged {
     background: alpha(@sky, 0.14);
     color: @sky;
-    border-color: alpha(@sky, 0.40);
-    box-shadow: 0 0 8px alpha(@sky, 0.28);
+    border-color: alpha(@sky, 0.4);
 }
 
 #battery.full {
     background: alpha(@teal, 0.14);
     color: @teal;
-    border-color: alpha(@teal, 0.40);
+    border-color: alpha(@teal, 0.4);
 }
 
 #custom-notification {
@@ -423,34 +403,19 @@ window#waybar.empty #window {
     color: @lavender;
 }
 
+#custom-power {
     background: alpha(@red, 0.14);
     color: @red;
     border-color: alpha(@red, 0.35);
     font-size: 13px;
     padding: 1px 12px 1px 8px;
     margin-right: 2px;
-    box-shadow: 0 0 8px alpha(@red, 0.20);
 }
 
 #custom-power:hover {
     background: alpha(@red, 0.28);
     color: @maroon;
-    border-color: alpha(@maroon, 0.60);
-    box-shadow: 0 0 14px alpha(@red, 0.45);
-}
-
-#tray {
-    padding: 0 6px;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: alpha(@red, 0.15);
-    border-radius: 4px;
+    border-color: alpha(@maroon, 0.6);
 }
 
 #idle_inhibitor {
@@ -466,7 +431,6 @@ window#waybar.empty #window {
     color: @yellow;
     background: alpha(@yellow, 0.12);
     border: 1px solid alpha(@yellow, 0.35);
-    box-shadow: 0 0 8px alpha(@yellow, 0.28);
 }
 
 #idle_inhibitor:hover {
@@ -491,7 +455,7 @@ window#waybar.empty #window {
 #custom-wallpaper:hover {
     color: @lavender;
     background: alpha(@lavender, 0.12);
-    border: 1px solid alpha(@lavender, 0.30);
+    border: 1px solid alpha(@lavender, 0.3);
 }
 
 #custom-colorpicker {
@@ -506,5 +470,24 @@ window#waybar.empty #window {
 #custom-colorpicker:hover {
     color: @pink;
     background: alpha(@pink, 0.12);
-    border: 1px solid alpha(@pink, 0.30);
+    border: 1px solid alpha(@pink, 0.3);
+}
+
+#custom-greeting {
+    color: @overlay1;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+#custom-weather {
+    color: @sky;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+#custom-sep-left,
+#custom-sep-right {
+    color: @surface1;
+    font-size: 13px;
+    padding: 0 2px;
 }
