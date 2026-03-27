@@ -53,7 +53,8 @@ sudo pacman -S hyprland waybar swaync swww hyprlock hypridle \
   hyprsunset xdg-desktop-portal-hyprland \
   playerctl pamixer brightnessctl blueman \
   fastfetch starship jq socat ttf-jetbrains-mono-nerd \
-  noto-fonts-emoji papirus-icon-theme
+  noto-fonts-emoji papirus-icon-theme polkit-kde-agent \
+  kwallet kdeconnect
 
 yay -S anyrun-git hyprshot hyprpicker
 ```
