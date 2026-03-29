@@ -1,7 +1,7 @@
 #!/bin/bash
 
-WALLS_DIR="${WALLS_DIR:-$HOME/Obrazy/wallpapers}"
-CACHE_DIR="$HOME/.cache/swww/thumbnails"
+WALLS_DIR="${WALLS_DIR:-$HOME/Pictures/wallpapers}"
+CACHE_DIR="$HOME/.cache/awww/thumbnails"
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 TRANSITION="${1:-smooth}"
 
@@ -12,7 +12,7 @@ mapfile -d '' walls < <(find "$WALLS_DIR" \
     -maxdepth 1 -print0 2>/dev/null | sort -z)
 
 if [[ ${#walls[@]} -eq 0 ]]; then
-    notify-send "swww" "Brak tapety w: $WALLS_DIR"
+    notify-send "awww" "No wallpapers in: $WALLS_DIR"
     exit 1
 fi
 
@@ -47,7 +47,7 @@ if $has_magick; then
 
     chosen=$(printf '%b\n' "${entries[@]}" | rofi -dmenu \
         -i \
-        -p "󰸉  Tapeta" \
+        -p "󰸉  Wallpaper" \
         -show-icons \
         -theme-str 'window { width: 800px; } listview { columns: 3; lines: 6; } element { orientation: vertical; } element-icon { size: 100px; }')
 
@@ -57,7 +57,7 @@ if $has_magick; then
     done
 else
     chosen=$(printf '%s\n' "${walls[@]}" | xargs -I{} basename {} | \
-        rofi -dmenu -i -p "󰸉  Tapeta")
+        rofi -dmenu -i -p "󰸉  Wallpaper")
 fi
 
 [[ -z "$chosen" ]] && exit 0

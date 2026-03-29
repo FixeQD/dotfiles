@@ -16,7 +16,7 @@ _Arch Linux · Hyprland 0.54 · Wayland_
 | Bar           | Waybar           |
 | Powiadomienia | SwayNC           |
 | Launcher      | anyrun           |
-| Tapeta        | swww             |
+| Tapeta        | awww             |
 | Ekran blokady | hyprlock         |
 | Idle          | hypridle         |
 | Terminal      | Ghostty          |
@@ -33,7 +33,7 @@ _Arch Linux · Hyprland 0.54 · Wayland_
 
 - Floating pill waybar z ikonami aplikacji w workspacach
 - SwayNC z suwakami głośności/jasności, MPRIS, szybkie toggle
-- Automatyczna zmiana tapety co 15 minut przez swww
+- Automatyczna zmiana tapety co 15 minut przez awww
 - Ghostty z blur przez Hyprland (opacity override)
 - Rofi z własnym ciemnym motywem — menadżer WiFi, schowek, power menu, emoji
 - Skrypt nogaps — usuwa odstępy/border gdy tylko jedno okno
@@ -45,7 +45,7 @@ _Arch Linux · Hyprland 0.54 · Wayland_
 ## Zależności
 
 ```bash
-sudo pacman -S hyprland waybar swaync swww hyprlock hypridle \
+sudo pacman -S hyprland waybar swaync awww hyprlock hypridle \
   ghostty rofi-wayland anyrun-git hyprshot grim slurp \
   cliphist wl-clipboard polkit-kde-agent hyprpolkitagent \
   hyprsunset xdg-desktop-portal-hyprland \
@@ -90,7 +90,7 @@ Skrypt robi backup twoich aktualnych configów do `~/.config-backup-DATA` przed 
 
 ## Tapety
 
-Wrzuć tapety do `~/Obrazy/wallpapers/`. swww losuje jedną przy starcie i zmienia co 15 minut.
+Wrzuć tapety do `~/Obrazy/wallpapers/`. awww losuje jedną przy starcie i zmienia co 15 minut.
 
 ---
 
@@ -109,7 +109,7 @@ Wrzuć tapety do `~/Obrazy/wallpapers/`. swww losuje jedną przy starcie i zmien
 ├── rofi/
 │   └── scripts/
 ├── ghostty/
-├── swww/
+├── awww/
 ├── fastfetch/
 ├── eww/
 ├── gtk-3.0/

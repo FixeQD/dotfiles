@@ -6,7 +6,7 @@ CONFIG="$HOME/.config"
 BACKUP="$HOME/.config-backup-$(date +%F-%H%M%S)"
 COMMON="$DOTFILES/common"
 
-DIRS=(hypr waybar swaync rofi ghostty swww fastfetch eww gtk-3.0 gtk-4.0)
+DIRS=(hypr waybar swaync rofi ghostty awww fastfetch eww gtk-3.0 gtk-4.0)
 
 usage() {
     echo "Usage: bash install.sh [pl|en]"
@@ -66,7 +66,7 @@ done
 echo "  ✓ starship.toml"
 
 find "$CONFIG/hypr/scripts" -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true
-find "$CONFIG/swww"         -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true
+find "$CONFIG/awww"         -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true
 find "$CONFIG/rofi/scripts" -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true
 find "$CONFIG/waybar"       -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true
 find "$CONFIG/eww/scripts"  -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true

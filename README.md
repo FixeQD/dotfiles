@@ -31,7 +31,7 @@ Backs up existing configs to `~/.config-backup-DATE` before overwriting.
 | Bar           | Waybar           |
 | Notifications | SwayNC           |
 | Launcher      | anyrun           |
-| Wallpaper     | swww             |
+| Wallpaper     | awww             |
 | Lockscreen    | hyprlock         |
 | Idle          | hypridle         |
 | Terminal      | Ghostty          |
@@ -47,7 +47,7 @@ Backs up existing configs to `~/.config-backup-DATE` before overwriting.
 ## Dependencies
 
 ```bash
-sudo pacman -S hyprland waybar swaync swww hyprlock hypridle \
+sudo pacman -S hyprland waybar swaync awww hyprlock hypridle \
   ghostty rofi-wayland grim slurp \
   cliphist wl-clipboard polkit-kde-agent \
   hyprsunset xdg-desktop-portal-hyprland \
@@ -65,7 +65,7 @@ yay -S anyrun-git hyprshot hyprpicker
 
 - Floating pill waybar with workspace app icons
 - SwayNC with volume/backlight sliders, MPRIS, quick toggles
-- Wallpaper auto-change every 15 minutes via swww
+- Wallpaper auto-change every 15 minutes via awww
 - Ghostty with Hyprland blur (opacity override)
 - Rofi — wifi manager, clipboard, powermenu, emoji picker
 - nogaps — removes gaps/borders when only one window is open
@@ -95,7 +95,7 @@ yay -S anyrun-git hyprshot hyprpicker
 ## Wallpapers
 
 Put wallpapers in `~/Pictures/wallpapers/` (EN) or `~/Obrazy/wallpapers/` (PL).
-swww picks a random one on startup and rotates every 15 minutes.
+awww picks a random one on startup and rotates every 15 minutes.
 
 ---
 
@@ -109,7 +109,7 @@ swww picks a random one on startup and rotates every 15 minutes.
 │   ├── swaync/
 │   ├── rofi/
 │   ├── ghostty/
-│   ├── swww/
+│   ├── awww/
 │   ├── fastfetch/
 │   ├── eww/
 │   ├── gtk-3.0/

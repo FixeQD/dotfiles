@@ -1,10 +1,10 @@
 #!/bin/bash
 
 WALLS_DIR="$HOME/Obrazy/wallpapers"
-STATE_FILE="$HOME/.cache/swww/current_wallpaper"
+STATE_FILE="$HOME/.cache/awww/current_wallpaper"
 
 transition_smooth() {
-    swww img "$1" \
+    awww img "$1" \
         --transition-type wipe \
         --transition-angle 30 \
         --transition-duration 1.5 \
@@ -13,7 +13,7 @@ transition_smooth() {
 }
 
 transition_fade() {
-    swww img "$1" \
+    awww img "$1" \
         --transition-type fade \
         --transition-duration 1.2 \
         --transition-fps 60 \
@@ -21,7 +21,7 @@ transition_fade() {
 }
 
 transition_grow() {
-    swww img "$1" \
+    awww img "$1" \
         --transition-type grow \
         --transition-pos center \
         --transition-duration 1.0 \
@@ -30,7 +30,7 @@ transition_grow() {
 }
 
 transition_outer() {
-    swww img "$1" \
+    awww img "$1" \
         --transition-type outer \
         --transition-pos center \
         --transition-duration 1.2 \
@@ -43,7 +43,7 @@ transition_random() {
     local angles=(0 30 45 90 135)
     local t=${types[$RANDOM % ${#types[@]}]}
     local a=${angles[$RANDOM % ${#angles[@]}]}
-    swww img "$1" \
+    awww img "$1" \
         --transition-type "$t" \
         --transition-angle "$a" \
         --transition-duration 1.2 \
@@ -52,7 +52,7 @@ transition_random() {
 }
 
 transition_instant() {
-    swww img "$1" --transition-type none
+    awww img "$1" --transition-type none
 }
 
 set_wallpaper() {
@@ -64,8 +64,8 @@ set_wallpaper() {
         exit 1
     fi
 
-    if ! pgrep -x swww-daemon > /dev/null; then
-        swww-daemon --format xrgb &
+    if ! pgrep -x awww-daemon > /dev/null; then
+        awww-daemon --format xrgb &
         sleep 0.5
     fi
 
